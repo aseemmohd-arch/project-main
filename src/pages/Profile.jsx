@@ -1,0 +1,3 @@
+export default function Profile({ user }) {
+  return <div className="surface-card profile-card"><div className="profile-avatar">{user.name.slice(0,1).toUpperCase()}</div><div className="eyebrow mt-3">ACCOUNT DETAILS</div><h2>{user.name}</h2><p className="muted">{user.email}</p><div className="profile-details"><div><span>Account role</span><strong className="text-capitalize">{user.role}</strong></div><div><span>Account ID</span><strong>{user.id}</strong></div></div><div className="alert alert-info mt-4 mb-0 small">This demo stores account data in this browser's Local Storage. It is intended for academic demonstration, not production authentication.</div></div>;
+}
